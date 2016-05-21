@@ -23,7 +23,10 @@ public class RateDAL {
 		ArrayList<RateDomainModel> alRates = new ArrayList<RateDomainModel>();		
 		
 		try {
-			tx = session.beginTransaction();	
+			tx = session.beginTransaction();
+			String hql = "FROM RateDomainModel rte WHERE rte.id > 10 ORDER BY rte.dInterestRate DESC";
+			Query query = session.createQuery(hql);
+			List results = query.list();
 			
 			//TODO - RocketDALRateDAL.getAllRates
 			//			probably not a bad idea to sort the results...  Add an OrderBy
