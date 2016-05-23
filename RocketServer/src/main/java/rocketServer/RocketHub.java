@@ -23,7 +23,8 @@ public class RocketHub extends Hub {
 			resetOutput();
 			
 			LoanRequest lq = (LoanRequest) message;
-			
+			Double Rate = RateBLL.getRate(int GivenCreditScore);
+			Double Payment = RateBLL.getPayment(r, n, p, f, t);
 			//	TODO - RocketHub.messageReceived
 
 			//	You will have to:
