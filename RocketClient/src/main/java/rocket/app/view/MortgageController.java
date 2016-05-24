@@ -1,8 +1,13 @@
 package rocket.app.view;
 
+
 import eNums.eAction;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import rocket.app.MainApp;
 import rocketCode.Action;
 import rocketData.LoanRequest;
@@ -11,6 +16,17 @@ public class MortgageController {
 
 	private MainApp mainApp;
 	
+	private TextField txtIncome;
+	
+	private TextField txtExpenses;
+	
+	private TextField txtCreditScore;
+	
+	private TextField txtHouseCost;
+	
+	private ComboBox LoanTerm;
+	
+	private Button Calculate;
 	//	TODO - RocketClient.RocketMainController
 	
 	//	Create private instance variables for:
